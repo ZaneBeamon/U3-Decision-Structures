@@ -17,6 +17,9 @@ public class MovieTickets {
         if(money > 20){
             System.out.println("You can also buy popcorn.");
         }
+        if(money > 30){
+            System.out.println("you can as well buy a soda.");
+        }
 
         if(money < 10){
             System.out.println("You can't buy a ticket.");

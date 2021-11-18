@@ -1,4 +1,37 @@
+import javax.swing.*;
+
 public class ShippingCosts {
+
+
+    public static void main(String[] args) {
+        double Shipping;
+        int Distance = Integer.parseInt(JOptionPane.showInputDialog("distance traveled"));
+        double weight = Double.parseDouble(JOptionPane.showInputDialog("weight of object"));
+        double cost;
+
+        if (weight >= 10) {
+            Shipping = 4.80;
+        } else {
+            if (weight >= 6) {
+                Shipping = 3.70;
+            } else {
+                if (weight >= 2) {
+                    Shipping = 2.20;
+                } else {
+                    Shipping = 1.10;
+                }
+                public static double cost ( double rate, int miles ){
+
+                    int costMultiplier = miles / 100;
+                    if (costMultiplier == 0) {
+                        costMultiplier = 1;
+
+                    }
+                    return rate * cost;
+                }
+            }
+
+
 
     /*
     A Shipping Company charges the following rates
@@ -23,4 +56,6 @@ public class ShippingCosts {
      */
 
 
+        }
+    }
 }
